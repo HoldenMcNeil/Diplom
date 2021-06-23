@@ -1,0 +1,996 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Medium.ttf)
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    color: #0B0B0B;
+}
+.header {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid black;
+}
+.wrapper{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.header a{
+    color: #0B0B0B;
+    text-decoration: none;
+}
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;     
+    align-items: center;
+}
+.nav_menu {
+    position: relative;
+    margin-top: 5px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 48px;
+}
+.nav_menu li{
+    margin-right: 28px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.phone {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.phone svg{
+    margin-right: 8px;
+}
+.icon {
+    position: absolute;
+    display: none;
+    margin-left: 70%;
+    margin-top: 2%;
+}
+.nav_menuresponsive{
+    padding-top: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+    .header_wrapper{
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: flex-start; 
+    } 
+}
+@media screen and (max-width: 895px){
+    .nav_menu li{
+        margin-right: 8px;
+        display: inline-block;
+    }
+    .phone{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .nav_menu a, .phone{
+        display: none;
+    }
+    .icon{
+        float: right;
+        display: block;
+        color: #0B0B0B;
+        font-size: 24px;
+        margin-left: 89%;
+    }
+    .nav_menu ul,li {
+        list-style: none;
+        padding: 8px 0  ;
+    }
+    nav{
+        width: 100%;
+    } 
+}
+@media screen and (max-width: 500px){
+    .icon{
+        margin-left: 80%;
+        margin-top: 3%;
+    }
+}
+
+
+.header_content{
+    margin-top: 104px;
+    display: flex;
+}
+.h_content h1{
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+    color: #0B0B0B;
+    margin-bottom: 16px;
+}
+.h_content h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 59px;
+    color: #0B0B0B;
+    margin-bottom: 48px;
+}
+.btn {
+    color: #0B0B0B;
+    text-decoration: none;
+    background: #FDAB2F;
+    border-radius: 8px;
+    padding: 16px 32px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 55px;
+}
+.h_content p{
+    font-style: normal;
+    font-weight: 500;   
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .first_img{
+        display: none;
+    }
+    .two_img{
+        display: none;
+    }
+    nav{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1050px){
+    .nav_menu{
+        margin-right: 24px;
+    }
+    .nav_menu li{
+        margin-right: 16px;
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 895px){
+    .nav_menu li{
+        margin-right: 8px;
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 768px){
+    .h_content h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .h_content h2{
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 16px;
+    }
+    .h_content p{
+        font-size: 12px;
+    }
+    .h_content a{
+        padding: 8px 8px;
+        font-size: 14px;
+        margin-top: 24px;
+    }
+}
+
+
+.title_services {
+    display: flex;
+    justify-content: center;
+    padding-top: 104px;
+    margin-bottom: 104px;
+}
+.title_services h2 {
+    border-bottom: 4px solid #FDAB2F;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+@media screen and (max-width: 768px){
+    .title_services h2{
+        font-size: 16px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+.services_bg{
+    background-color: #FDAB2F;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.services_grid{
+    display: flex;
+    justify-content: space-between;
+}
+.services{
+    width: calc(25% - 18px);
+    text-align: center;
+    background: linear-gradient(#C8CACD, #FFFFFF);
+    padding-bottom:104px ;
+}
+.services_img{
+    display: block;
+    width: 100%;
+}
+.services_content h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding: 16px 0 40px;
+}
+.services p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+.services_btn{
+    color: #0B0B0B;
+    text-decoration: none;
+    background: #FDAB2F;
+    border-radius: 25px;
+    padding: 12px 32px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 64px;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .services_grid{
+        flex-wrap: wrap;
+    }
+    .services{
+        width: calc(50% - 12px);
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .services{
+        width: 100%;
+    }
+}
+
+
+.advantages_content h3{
+    text-align: left;
+    padding-top: 104px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #0A0A0A;
+}
+.advantages_all{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 104px;
+}
+.advantages{
+    width: 100%;
+}
+.advantages_grid{
+    padding-top: 24px;
+}
+.advantages_grid p{
+    padding-top: 4px;
+    padding-left: 60px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+}
+.advantages_grid img{
+    position: absolute;
+    margin-right: 16px;
+}
+
+
+@media screen and (max-width: 768px){
+    .advantages_grid p{
+        font-size: 14px;
+        padding-left: 40px;
+        padding-top: 0;
+    }
+    .advantages_grid img{
+        width: 6%;
+    }
+    .advantages_all{
+        padding-top: 24px;
+    }
+}
+
+
+.title_comment {
+    display: flex;
+    justify-content: center;
+}
+.title_comment h2 {
+    padding-top: 104px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    border-bottom: 4px solid #FDAB2F;
+    padding-right: 30px;
+    padding-left: 30px;  
+}
+
+
+.comment_all{
+    padding-bottom: 104px;
+}
+.comment_grid{
+    display: flex;
+    justify-content: center;
+}
+.comment{
+    margin-top: 104px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 323px;
+    height: 215px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.comment h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0B0B0B;
+    padding: 16px 0 40px;
+    padding-top: 24px;
+    padding-left: 16px;
+}
+.comment p{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.comment a{
+    text-decoration: none;
+    float: right;
+    color: #0B0B0B;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 40px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 960px) {
+    .comment_grid{
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+    .comment{
+        margin-top: 24px;
+        margin-right: 24px;
+    }
+}
+
+
+.consultation_bg{
+    display: flex;
+    justify-content: center;
+}
+.fre_consultation{
+    background-image: url(../img/primer.png);
+    background-position: no-repeat center center;
+    background-size: cover;
+    height: 826px;
+    width: 100%;
+    margin-top: 104px;
+}
+.consultation{
+    justify-content: center;
+    display: flex;
+    padding-top: 230px;
+}
+.consultation_content{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    /* max-width: 902px; */
+    max-width: 650px;
+    height: 455px;
+    width: 100%;
+}
+.consultation_content h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    color: #0B0B0B;
+}
+
+.consultation_content p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.consultation_input{
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #656565;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 320px;
+    height: 49px;
+    margin-top: 40px;
+    margin-right: 24px;
+    padding: 16px 24px 16px;
+}
+.btn2{
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B0B0B;
+    display: inline-block;
+    padding: 20px 40px;
+    background: #FDAB2F;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.consultation_content h4 {
+    padding-top: 24px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+}
+
+
+footer{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #0B0B0B; 
+}
+
+
+
+
+/* Фон за формой */
+.model {
+    display: none; /* Модальное окно скрыто по умолчанию */
+    position: fixed; /* Фикс. Позиция на главной странице */
+    z-index: 1; /* Отображение на заднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* 100% по ширине */
+    height: 100%; /* 100% по высоте */
+    overflow: hidden; /* Включить прокрутку, если необходимо */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+/* Содержание модального окна*/
+.model-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% от верха и центрировано */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше и меньше, зависит от размеров экрана */
+    box-shadow: 5px 10px 5px #666; /*Добавить тень */
+}
+.model_grid{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+/* Основные свойства кнопки «Закрыть» */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+/* Свойства кнопки «Закрыть», когда вы наводите на нее курсор или взаимодействуете с ней */
+.close:hover,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.model-content h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    color: #0B0B0B;
+}
+.model-content p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B0B0B;
+}
+.model_input{
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #656565;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 320px;
+    height: 49px;
+    margin-top: 40px;
+    margin-right: 24px;
+    padding: 16px 24px 16px;
+    height: 49px;
+}
+.btn3{
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B0B0B;
+    display: inline-block;
+    padding: 20px 40px;
+    background: #FDAB2F;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.model-content h4 {
+    padding-top: 24px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #0B0B0B;
+}
+.model-content{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    width: 902px;
+    height: 355px;
+    max-width: 50em;
+    max-height: 50em;
+}
+
+
+@media screen and (max-width: 768px){
+    .model-content{
+        height: 420px;
+    }
+}
+
+/* Страница Контакты */
+
+
+
+.h1{
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 88px;
+}
+
+
+.contact_grid h1{
+    padding-bottom: 80px;
+}
+.contact_all{
+    display: flex;
+    justify-content: space-between;
+}
+iframe{
+    padding-top: 104px;
+    padding-left: 80px;
+    max-width: 788px;
+}
+
+
+@media screen and (max-width: 620px){
+    .header_content{
+        flex-wrap: wrap;
+    }
+    iframe{
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+
+.contact{
+    padding-top: 32px;
+}
+.contact h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 8px;
+}
+.contact p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
+@media screen and (max-width: 786px){
+    .footer{
+        font-size: 14px;
+        display: block;
+    }
+    .consultation_input{
+        margin-top: 16px;
+        margin-right: 4px;
+    }
+    .consultation_content{
+        height: 420px;
+    }
+    .comm_input{
+        margin-top: 16px;
+        margin-right: 4px;
+    }
+}
+
+
+@media screen and (max-width: 380px){
+    .consultation_input{
+        margin-top: 16px;
+        margin-right: 4px;
+        width: 270px;
+    }
+    .comm_input{
+        margin-top: 16px;
+        margin-right: 4px;
+        width: 270px;
+    }
+}
+
+
+
+/* Страница О компании */
+
+.all_company h1{
+    padding-bottom:80px ;
+}
+.about p{
+    padding: 8px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+
+/* Страница Отзывы */
+
+
+
+.bg_comm{
+    background-color: #FDAB2F;
+}
+.comm_h1{
+    padding-top: 104px;
+    padding-bottom: 104px;
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.comm_all{
+    padding-bottom: 104px;
+}
+.comm_grid{
+    display: flex;
+    justify-content: center;
+}
+.comm_grid:last-child{
+    margin-right: 0;
+    padding-right: 0;
+
+}
+.comm{
+    margin-right: 24px;
+    background-color: #ffffff;
+    margin-top: 104px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 280px;
+    height: 225px;
+}
+.comm h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0B0B0B;
+    padding: 16px 0 40px;
+    padding-top: 24px;
+    padding-left: 16px;
+}
+.comm p{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.consultation_comm{
+    justify-content: center;
+    display: flex;
+    padding-top: 104px;
+}
+.all_content{
+    display: flex;
+    justify-content: center;
+}
+.comm_content{
+    padding-top: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 1000px;
+    height: 355px;
+    width: 100%;
+}
+.comm_content h2{
+    padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0B0B0B;
+    line-height: 29px;
+}
+.comm_input{
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #656565;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 320px;
+    height: 49px;
+    margin-top: 40px;
+    margin-right: 8px;
+    padding: 16px 24px 16px;
+}
+.btn4{
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B0B0B;
+    display: inline-block;
+    padding: 20px 40px;
+    background: #FDAB2F;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+    .comm_grid{
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+    .comm{
+        margin-top: 24px;
+        margin-right: 24px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .comm_content{
+        height: 470px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Фон за формой */
+.model_win {
+    display: none; /* Модальное окно скрыто по умолчанию */
+    position: fixed; /* Фикс. Позиция на главной странице */
+    z-index: 1; /* Отображение на заднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* 100% по ширине */
+    height: 100%; /* 100% по высоте */
+    overflow: hidden; /* Включить прокрутку, если необходимо */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+/* Содержание модального окна*/
+.model_content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% от верха и центрировано */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше и меньше, зависит от размеров экрана */
+    box-shadow: 5px 10px 5px #666; /*Добавить тень */
+}
+.model_win_grid{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+/* Основные свойства кнопки «Закрыть» */
+/* .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+} */
+/* Свойства кнопки «Закрыть», когда вы наводите на нее курсор или взаимодействуете с ней */
+/* .close:hover,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} */
+.model-content h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    color: #0B0B0B;
+}
+.model-content p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B0B0B;
+}
+/* input{
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #656565;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 320px;
+    height: 49px;
+    margin-top: 40px;
+    margin-right: 24px;
+    padding: 16px 24px 16px;
+    height: 49px;
+} */
+.btn3{
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B0B0B;
+    display: inline-block;
+    padding: 20px 40px;
+    background: #FDAB2F;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.model-content h4 {
+    padding-top: 24px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #0B0B0B;
+}
+.model-content{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    width: 902px;
+    height: 355px;
+    max-width: 50em;
+    max-height: 50em;
+}
+
+
+
+@media screen and (max-width: 786px){
+    .footer{
+        font-size: 14px;
+        display: block;
+    }
+    input{
+        margin-top: 16px;
+        margin-right: 4px;
+       
+    }
+    .consultation_content{
+        height: 420px;
+    }
+    .comm_input{
+        margin-top: 16px;
+        margin-right: 4px;
+    }
+}
+
+
+@media screen and (max-width: 380px){
+    input{
+        margin-top: 16px;
+        margin-right: 4px;
+        width: 270px;
+    }
+    .comm_input{
+        margin-top: 16px;
+        margin-right: 4px;
+        width: 270px;
+    }
+}
+
+
+
